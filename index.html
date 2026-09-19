@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KCG Studio | Websites und Automatisierung für Betriebe</title>
+  <meta name="description" content="KCG Studio baut Websites und automatisiert Büroabläufe für Handwerksbetriebe und kleine Unternehmen. Ohne neue Software für dein Team. Erste Version in Tagen." />
+  <link rel="canonical" href="https://kcgstudio.de/" />
+  <meta property="og:url" content="https://kcgstudio.de/" />
+  <meta property="og:title" content="KCG Studio | Websites und Automatisierung für Betriebe" />
+  <meta property="og:description" content="KCG Studio baut Websites und automatisiert Büroabläufe für Handwerksbetriebe und kleine Unternehmen. Dein Team muss dafür keine neue Software lernen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:image" content="https://kcgstudio.de/img/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <meta name="theme-color" content="#F4EEE3" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<!-- data-reviews="off" blendet die Bewertungen aus, bis echte Texte da sind. Auf "on" stellen, sobald Google-Bewertungen vorliegen. -->
+<body data-reviews="off">
+  <canvas id="gl" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="wordmark" aria-label="KCG Studio, Startseite"><b>KCG</b><i>Studio</i></a>
+    <nav class="nav__links" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="anfragesystem.html">Anfragesystem</a>
+      <a href="#bewertungen">Bewertungen</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="btn btn--pulse nav__cta" href="#kontakt">Erstgespräch vereinbaren</a>
+    <button class="nav__burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <a href="#leistungen">Leistungen</a>
+    <a href="anfragesystem.html">Anfragesystem</a>
+    <a href="#bewertungen">Bewertungen</a>
+    <a href="#ablauf">Ablauf</a>
+    <a href="#kontakt">Kontakt</a>
+    <a class="btn btn--pulse menu__cta" href="#kontakt">Erstgespräch vereinbaren</a>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO: Wortmarke im Nebel, Zettel-Sturm dahinter -->
+    <section class="hero" id="hero">
+      <div class="hero__brand" aria-hidden="true">
+        <p class="hero__mark"><b>KCG</b> <i>Studio</i></p>
+        <span class="hero__rule"></span>
+        <p class="hero__eyebrow">Websites und Automatisierung für Betriebe</p>
+      </div>
+      <a class="hero__scroll" href="#statement" aria-label="Weiter zum Inhalt"><span class="hero__scroll-l">Scroll</span><span class="hero__scroll-line"><i></i></span></a>
+    </section>
+
+    <!-- STATEMENT: steigt aus dem Nebel -->
+    <section class="statement" id="statement">
+      <div class="statement__in">
+        <h1 class="display statement__h1 reveal">Websites und Automatisierung für <em>Betriebe.</em></h1>
+        <p class="statement__p reveal">KCG Studio baut Websites und automatisiert Büroabläufe für Handwerksbetriebe und kleine Unternehmen. Dein Team muss dafür keine neue Software lernen. Zum Beispiel der Stundenzettel: am Tablet ausgefüllt, vom Kunden unterschrieben, kurz darauf als PDF im Büro.</p>
+        <div class="statement__cta reveal">
+          <a class="btn btn--pulse" href="#kontakt">Erstgespräch vereinbaren</a>
+          <a class="arrow" href="#leistungen"><span>Was wir machen</span><span class="arrow__i"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h10M6.5 1.5 11 6l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="problem" id="problem" data-chapter="1">
+      <div class="problem__in">
+        <p class="chapter reveal"><span class="chapter__n">1</span>Das Problem</p>
+        <h2 class="display reveal">Wo die Zeit wirklich hingeht.</h2>
+        <p class="problem__sub reveal">Nicht auf der Baustelle. Danach, im Büro.</p>
+
+        <div class="zeit reveal">
+          <p class="zeit__t">18:42</p>
+          <div>
+            <h3>Zettel abtippen</h3>
+            <p>Stundenzettel, Lieferscheine, Notizen. Alles, was tagsüber anfällt, tippst du abends von Hand in den Rechner.</p>
+          </div>
+        </div>
+        <div class="zeit reveal">
+          <p class="zeit__t">20:30</p>
+          <div>
+            <h3>Anfragen beantworten</h3>
+            <p>Die Anfrage kam mittags. Jetzt sitzt du dran. Wartest du bis morgen, hat der Kunde vielleicht schon woanders angefragt.</p>
+          </div>
+        </div>
+        <div class="zeit reveal">
+          <p class="zeit__t">22:10</p>
+          <div>
+            <h3>Alles läuft über dich</h3>
+            <p>Termine, Rückfragen, Abläufe. Alles hängt an einer Person. Bist du mal nicht da, bleibt es liegen.</p>
+          </div>
+        </div>
+
+        <p class="display problem__fazit reveal">Diese Stunden bezahlt dir keiner. <em>Kosten tun sie trotzdem.</em></p>
+      </div>
+    </section>
+
+    <!-- BEISPIEL STUNDENZETTEL: macht »Automatisierung« greifbar, bevor die Leistungen kommen -->
+    <section class="beispiel" id="beispiel">
+      <div class="beispiel__in">
+        <p class="mono beispiel__eyebrow reveal">Automatisierung, ein Beispiel</p>
+        <h2 class="display reveal">Der Stundenzettel, <em>ohne Abtippen.</em></h2>
+        <p class="beispiel__lead reveal">Unter Automatisierung kann sich kaum jemand etwas vorstellen. Deshalb ein Beispiel, das bei einem Elektrobetrieb schon genau so läuft.</p>
+        <div class="beispiel__grid">
+          <div class="beispiel__col reveal">
+            <h3>Vorher</h3>
+            <ul>
+              <li>Der Zettel liegt bis Monatsende im Auto.</li>
+              <li>Im Büro wird Handschrift entziffert und abgetippt.</li>
+              <li>Die Unterschrift vom Kunden fehlt, also noch mal hinterher.</li>
+            </ul>
+          </div>
+          <div class="beispiel__col beispiel__col--nachher reveal">
+            <h3>Nachher</h3>
+            <ul>
+              <li>Dein Monteur füllt den Zettel am Tablet aus. Mit dem Stift, wie auf Papier.</li>
+              <li>Der Kunde unterschreibt direkt auf dem Bildschirm.</li>
+              <li>Kurz darauf liegt das fertige PDF im Büro-Postfach.</li>
+              <li>Klappt auch ohne Netz auf der Baustelle. Der Zettel geht raus, sobald wieder Empfang da ist.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="beispiel__more reveal">Nach dem gleichen Prinzip laufen Anfragen, Termine, Materiallisten und Freigaben.</p>
+      </div>
+    </section>
+
+    <!-- DER WEG EINER ANFRAGE: horizontal pan -->
+    <section class="pan" id="leistungen" data-chapter="2">
+      <div class="pan__track">
+        <div class="panel panel--intro">
+          <p class="chapter"><span class="chapter__n">2</span>Leistungen</p>
+          <h2 class="display">Der Weg<br />einer Anfrage.</h2>
+          <p class="panel__p">Vom ersten Klick bis zum Feierabend. An drei Stellen sorgen wir dafür, dass Arbeit bei dir nicht liegen bleibt.</p>
+        </div>
+        <article class="panel">
+          <figure class="panel__fig"><img src="img/finden.jpg" alt="Handwerker in Warnjacke schaut auf der Baustelle aufs Smartphone" loading="lazy" /></figure>
+          <p class="panel__tag">Website</p>
+          <h3>Gefunden werden.</h3>
+          <p>Eine Website, die zeigt, was dein Betrieb kann. Kunden finden schnell, was sie suchen, Bewerber bekommen einen ehrlichen Eindruck. Am Handy genauso wie am Rechner.</p>
+        </article>
+        <article class="panel">
+          <figure class="panel__fig"><img src="img/anfrage.jpg" alt="Hand im Arbeitshandschuh tippt auf ein Smartphone auf der Werkbank" loading="lazy" /></figure>
+          <p class="panel__tag">Automatisierung</p>
+          <h3>Anfragen laufen von allein.</h3>
+          <p>Eingangsbestätigung, Terminvorschlag, Erinnerung, Nachfassen. Das übernimmt die Technik, mit den Programmen, die du sowieso schon nutzt.</p>
+          <a class="arrow panel__link" href="anfragesystem.html"><span>Zum Anfragesystem</span><span class="arrow__i"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h10M6.5 1.5 11 6l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        </article>
+        <article class="panel">
+          <figure class="panel__fig"><img src="img/laeuft.jpg" alt="Hände halten ein robustes Tablet, daneben ein beiseitegelegtes Klemmbrett" loading="lazy" /></figure>
+          <p class="panel__tag">Web-App</p>
+          <h3>Abläufe ohne Zettel.</h3>
+          <p>Stundenzettel, Materiallisten, Freigaben. Daraus bauen wir kleine Web-Apps, die genau zu deinem Betrieb passen. Und kümmern uns danach weiter darum.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEIERABEND: hier kippt der Ton von Tag nach Abend -->
+    <section class="band" aria-label="Feierabend">
+      <div class="band__frame">
+        <img src="img/feierabend.jpg" alt="Handwerker zieht in der Abenddämmerung das Rolltor seiner Werkstatt herunter, das Tablet unter dem Arm" width="2200" height="1000" loading="lazy" />
+      </div>
+      <p class="display band__claim reveal">Und du hast <em>Feierabend.</em></p>
+    </section>
+
+    <!-- BEWERTUNGEN -->
+    <section class="reviews" id="bewertungen">
+      <div class="reviews__in">
+        <div class="reviews__lead">
+          <h2 class="display reveal">Was Betriebe sagen.</h2>
+          <div class="reviews__score reveal" aria-label="5 von 5 Sternen">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span class="reviews__num">5,0</span>
+            <span class="mono">auf Google</span>
+          </div>
+          <p class="reveal">Erfahrungen von Betrieben, die mit KCG Studio arbeiten.</p>
+          <!-- TODO: Google-Bewertungslink des Unternehmensprofils eintragen -->
+          <p class="reveal"><a class="btn btn--gold" href="#bewertungen">Auf Google bewerten</a></p>
+          <p class="mono reviews__note reveal">Beispieltexte, echte Bewertungen folgen</p>
+        </div>
+        <ul class="reviews__list">
+          <li class="review reveal">
+            <p class="stars" aria-label="5 von 5 Sternen">★★★★★</p>
+            <blockquote>Vorher lagen die Zettel bis Monatsende im Auto. Jetzt tippen die Jungs auf dem Tablet und ich sehe alles am selben Tag.</blockquote>
+            <p class="review__who">Beispiel, Elektrobetrieb</p>
+          </li>
+          <li class="review reveal">
+            <p class="stars" aria-label="5 von 5 Sternen">★★★★★</p>
+            <blockquote>Kein Agentur-Gerede. Sie kommt vorbei, versteht den Laden und zwei Tage später läuft die erste Version.</blockquote>
+            <p class="review__who">Beispiel, Klimatechnik</p>
+          </li>
+          <li class="review reveal">
+            <p class="stars" aria-label="5 von 5 Sternen">★★★★★</p>
+            <blockquote>Die Beiträge kommen pünktlich, ohne dass ich hinterher muss. Genau das wollte ich.</blockquote>
+            <p class="review__who">Beispiel, Fahrschule</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ANFRAGESYSTEM: Teaser, führt auf die Unterseite -->
+    <section class="teaser" id="anfragesystem" data-chapter="3">
+      <div class="teaser__in">
+        <div>
+          <p class="chapter reveal"><span class="chapter__n">3</span>Anfragesystem</p>
+          <h2 class="display reveal">Anfragen beantworten, während du arbeitest.</h2>
+          <p class="teaser__p reveal">Jede Anfrage bekommt sofort eine Antwort, die richtigen Fragen werden vorab geklärt, und wer passt, bucht sich direkt in deinen Kalender. Auch um 22 Uhr, auch am Samstag.</p>
+          <div class="teaser__cta reveal">
+            <a class="btn btn--pulse" href="anfragesystem.html">Zum Anfragesystem</a>
+            <a class="arrow" href="anfragesystem.html#rechner"><span>Aufwand ausrechnen</span><span class="arrow__i"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h10M6.5 1.5 11 6l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          </div>
+        </div>
+        <ul class="teaser__list">
+          <li class="reveal"><h3>Sofort beantwortet.</h3><p>Formular, Nachricht oder Mail. In unter fünf Minuten eine Antwort in deinem Ton, auch nachts.</p></li>
+          <li class="reveal"><h3>Vorsortiert.</h3><p>Zwei, drei Fragen klären vorab, ob es passt. Du fährst nur noch zu Terminen, bei denen etwas rauskommt.</p></li>
+          <li class="reveal"><h3>Termin steht.</h3><p>Wer passt, bucht sich selbst in deinen Kalender. Kein Hinterhertelefonieren.</p></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- ARBEITSWEISE: vier Statements, schweben über der Partikel-Welt -->
+    <section class="why" id="darum" data-chapter="4">
+      <div class="why__intro">
+        <div>
+          <p class="chapter reveal"><span class="chapter__n">4</span>Arbeitsweise</p>
+          <h2 class="display reveal">Warum<br />KCG Studio.</h2>
+        </div>
+      </div>
+      <article class="why__item">
+        <div class="why__in">
+          <h3 class="display reveal">Aus dem Handwerk, nicht aus der Agentur.</h3>
+          <p class="reveal">KCG Studio kommt aus einem Klimatechnik-Familienbetrieb. Den Bürokram nach Feierabend kennen wir nicht aus Präsentationen, sondern vom eigenen Schreibtisch.</p>
+        </div>
+      </article>
+      <article class="why__item why__item--right">
+        <div class="why__in">
+          <h3 class="display reveal">Erste Version in Tagen.</h3>
+          <p class="reveal">Du arbeitest normal weiter. Nach ein paar Tagen steht eine erste Version, die läuft. Dann schauen wir gemeinsam, was noch fehlt.</p>
+        </div>
+      </article>
+      <article class="why__item">
+        <div class="why__in">
+          <h3 class="display reveal">Keine neue Software für dein Team.</h3>
+          <p class="reveal">Wir arbeiten mit dem, was in deinem Betrieb schon da ist: Mail, Kalender, Telefon, Tablet. Niemand muss umlernen.</p>
+        </div>
+      </article>
+      <article class="why__item why__item--right">
+        <div class="why__in">
+          <h3 class="display reveal">Monatlich kündbar.</h3>
+          <p class="reveal">Die Betreuung läuft monatlich, ohne Jahresvertrag. Und wenn sich etwas bei dir nicht lohnt, sagen wir das, bevor wir es bauen.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-label="Was wir bauen">
+      <div class="marquee__track">
+        <span class="display">Websites</span>
+        <span class="display is-outline">Automatisierung</span>
+        <span class="display">Web-Apps</span>
+        <span class="display is-outline">Stundenzettel</span>
+        <span class="display">Anfragen</span>
+        <span class="display is-outline">Termine</span>
+        <span class="display">Websites</span>
+        <span class="display is-outline">Automatisierung</span>
+        <span class="display">Web-Apps</span>
+        <span class="display is-outline">Stundenzettel</span>
+        <span class="display">Anfragen</span>
+        <span class="display is-outline">Termine</span>
+      </div>
+    </section>
+
+    <!-- ABLAUF -->
+    <section class="ablauf" id="ablauf" data-chapter="5">
+      <p class="chapter reveal"><span class="chapter__n">5</span>Ablauf</p>
+      <h2 class="display reveal">So läuft es ab.</h2>
+      <div class="ablauf__grid">
+        <div class="schritt reveal">
+          <h3>Erstgespräch</h3>
+          <p>Wir schauen gemeinsam, wo dein Betrieb Zeit verliert und was sich sinnvoll automatisieren lässt. Lohnt es sich nicht, sagen wir das genauso.</p>
+          <small>Kostenlos und unverbindlich</small>
+        </div>
+        <div class="schritt reveal">
+          <h3>Umsetzung</h3>
+          <p>Du arbeitest weiter wie immer. Wir bauen die erste Version in ein paar Tagen und stimmen sie mit dir ab.</p>
+          <small>Erste Version in Tagen</small>
+        </div>
+        <div class="schritt reveal">
+          <h3>Läuft</h3>
+          <p>Die Lösung arbeitet im Hintergrund. Wir bleiben erreichbar, wenn sich etwas ändern soll. Du hast wieder Zeit für deinen Betrieb.</p>
+          <small>Monatlich kündbar</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="faq__in">
+        <h2 class="display reveal">Häufige Fragen.</h2>
+        <details class="reveal">
+          <summary>Muss mein Team neue Software lernen?</summary>
+          <p>Nein. Wir arbeiten mit den Programmen, die ihr schon nutzt, zum Beispiel Mail, Kalender und Telefon. Umlernen muss niemand.</p>
+        </details>
+        <details class="reveal">
+          <summary>Ist das DSGVO-konform?</summary>
+          <p>Ja. Den Umgang mit Daten planen wir von Anfang an mit. Wo es geht, bleiben Daten in Deutschland oder der EU.</p>
+        </details>
+        <details class="reveal">
+          <summary>Was, wenn es sich bei mir nicht lohnt?</summary>
+          <p>Dann bauen wir nichts. Im Erstgespräch schauen wir zuerst, wo eine Lösung wirklich Arbeit spart. Gibt es die Stelle nicht, sagen wir das.</p>
+        </details>
+        <details class="reveal">
+          <summary>Was kostet das?</summary>
+          <p>Das hängt davon ab, was gebaut wird. Vorher bekommst du ein klares Angebot mit Einrichtung und laufender Betreuung. Keine versteckten Kosten.</p>
+        </details>
+        <details class="reveal">
+          <summary>Wie lange bin ich gebunden?</summary>
+          <p>Die Betreuung ist monatlich kündbar. Du entscheidest, wie lange KCG Studio deinen Betrieb begleitet.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- KONTAKT: Formular geht an n8n (Workflow »KCG Studio: Kontaktformular«), Ersatzweg Mailprogramm -->
+    <section class="kontakt" id="kontakt" data-chapter="6">
+      <div class="kontakt__in">
+        <div>
+          <p class="chapter reveal"><span class="chapter__n">6</span>Kontakt</p>
+          <h2 class="display reveal">Lass uns schauen, was bei dir einfacher laufen kann.</h2>
+          <p class="kontakt__p reveal">Schreib uns kurz, worum es geht. Wir melden uns in der Regel am selben Werktag. Im Erstgespräch sagen wir dir ehrlich, wo sich etwas lohnt. Unverbindlich, ohne Verkaufsdruck.</p>
+          <div class="kontakt__ways reveal">
+            <!-- TODO: Google-Kalender-Terminplan verlinken und data-booking auf "on" stellen -->
+            <a class="btn btn--gold" href="#" data-booking="off">Termin online wählen</a>
+            <a href="tel:+491757724711">+49 175 7724711</a>
+            <!-- Optional: WhatsApp-Link <a href="https://wa.me/491757724711">WhatsApp</a> -->
+            <a href="mailto:info@kcgstudio.de">info@kcgstudio.de</a>
+          </div>
+        </div>
+        <form class="kform reveal" id="kontakt-form" data-webhook="https://n8n-n8n.ni5rqh.easypanel.host/webhook/kcg-kontakt" novalidate>
+          <div class="funnel__hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
+          <div class="kform__fields">
+            <label><span>Dein Name</span><input type="text" name="name" autocomplete="name" required /></label>
+            <label><span>Betrieb</span><input type="text" name="betrieb" autocomplete="organization" required /></label>
+            <label><span>Telefon oder E-Mail</span><input type="text" name="kontakt" autocomplete="tel" required /></label>
+            <label><span>Worum geht es? <small>(optional)</small></span><textarea name="nachricht" rows="4" maxlength="2000" placeholder="Zum Beispiel: Website, Anfragen, Stundenzettel. Oder: keine Ahnung, wo anfangen."></textarea></label>
+          </div>
+          <p class="kform__hint">Wir melden uns einmal. Keine Werbung, kein Newsletter. Was mit deinen Angaben passiert, steht in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+          <div class="kform__actions"><button type="submit" class="btn btn--pulse" id="kformSend">Anfrage schicken</button></div>
+          <p class="kform__err" id="kformErr" role="alert" hidden></p>
+          <div class="kform__done" id="kformDone" hidden>
+            <h3 class="display" id="kformDoneH">Danke, ist angekommen.</h3>
+            <p id="kformDoneP">Wir melden uns in der Regel am selben Werktag. Wenn es schneller gehen soll: <a href="tel:+491757724711">+49 175 7724711</a>.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="chapters" id="chapters" aria-label="Kapitel">
+    <a href="#problem"><span class="chapters__l">Das Problem</span><span class="chapters__d"></span><span class="chapters__bar"><i></i></span></a>
+    <a href="#leistungen"><span class="chapters__l">Leistungen</span><span class="chapters__d"></span><span class="chapters__bar"><i></i></span></a>
+    <a href="#anfragesystem"><span class="chapters__l">Anfragesystem</span><span class="chapters__d"></span><span class="chapters__bar"><i></i></span></a>
+    <a href="#darum"><span class="chapters__l">Arbeitsweise</span><span class="chapters__d"></span><span class="chapters__bar"><i></i></span></a>
+    <a href="#ablauf"><span class="chapters__l">Ablauf</span><span class="chapters__d"></span><span class="chapters__bar"><i></i></span></a>
+    <a href="#kontakt"><span class="chapters__l">Kontakt</span><span class="chapters__d"></span><span class="chapters__bar"><i></i></span></a>
+  </nav>
+  <a class="totop" id="totop" href="#top" aria-label="Nach oben"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 11V1M1.5 5.5 6 1l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+
+  <footer class="footer">
+    <div class="footer__in">
+      <div>
+        <a href="#top" class="wordmark" aria-label="KCG Studio"><b>KCG</b><i>Studio</i></a>
+        <p class="footer__claim">Websites und Automatisierung für Handwerksbetriebe und kleine Unternehmen. Düsseldorf.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#bewertungen">Bewertungen</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <nav aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+    <p class="footer__copy mono">© 2026 KCG Studio</p>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="ui.js"></script>
+  <script src="kontakt.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

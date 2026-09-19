@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anfragesystem | KCG Studio</title>
+  <meta name="description" content="Das Anfragesystem von KCG Studio antwortet sofort, stellt die richtigen Fragen und legt den Termin in deinen Kalender. Auch abends, auch am Wochenende." />
+  <link rel="canonical" href="https://kcgstudio.de/anfragesystem.html" />
+  <meta property="og:url" content="https://kcgstudio.de/anfragesystem.html" />
+  <meta property="og:title" content="Anfragesystem | KCG Studio" />
+  <meta property="og:description" content="Das Anfragesystem von KCG Studio antwortet sofort, stellt die richtigen Fragen und legt den Termin in deinen Kalender. Auch abends, auch am Wochenende." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:image" content="https://kcgstudio.de/img/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <meta name="theme-color" content="#F4EEE3" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="as">
+  <header class="nav is-solid">
+    <a href="index.html" class="wordmark" aria-label="KCG Studio, Startseite"><b>KCG</b><i>Studio</i></a>
+    <nav class="nav__links" aria-label="Hauptnavigation">
+      <a href="index.html#leistungen">Leistungen</a>
+      <a href="#rechner">Rechner</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+    <a class="btn btn--pulse nav__cta" href="#funnel">Zeig mir, wie das bei mir läuft</a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="as-hero">
+      <div class="as-in">
+        <p class="mono">Anfragesystem</p>
+        <h1 class="display">Anfragen beantworten, <em>während du arbeitest.</em></h1>
+        <p class="as-hero__p">Das Anfragesystem von KCG Studio antwortet sofort, stellt die richtigen Fragen und legt den Termin in deinen Kalender. Auch um 22 Uhr, auch am Samstag.</p>
+        <div class="as-hero__cta">
+          <a class="btn btn--pulse" href="#funnel">Zeig mir, wie das bei mir läuft</a>
+          <a class="btn btn--ghost" href="#rechner">Rechne es dir aus</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIER SZENEN -->
+    <section class="as-szenen">
+      <div class="as-in">
+        <h2 class="display">Vier Szenen, die du kennst.</h2>
+        <ol class="as-szenen__list">
+          <li><span class="as-szenen__t">21:40</span><p>Die Anfrage kommt rein. Du siehst sie morgens um sieben, zwischen Kaffee und Baustelle.</p></li>
+          <li><span class="as-szenen__t">Mittag</span><p>Der Kunde hat bei drei Betrieben angefragt. Den Auftrag bekommt der, der zuerst antwortet.</p></li>
+          <li><span class="as-szenen__t">Feierabend</span><p>Du telefonierst hinterher, um einen Termin zu finden. Zweimal Anrufbeantworter, einmal Rückruf.</p></li>
+          <li><span class="as-szenen__t">Dienstag</span><p>Du fährst raus, schaust dir alles an, und es war nur ein Preisvergleich.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- DAS LIEGT NICHT AN DIR -->
+    <section class="as-trost">
+      <div class="as-in as-in--narrow">
+        <h2 class="display">Das liegt nicht an dir.</h2>
+        <p>Du bist nicht zu langsam und nicht unorganisiert. Dir fehlt das Stück zwischen Anfrage und Termin.</p>
+        <p>Das, was abends antwortet, sortiert und nachhakt, während du arbeitest oder schläfst.</p>
+        <p class="as-trost__strong">Du hast einen Betrieb, kein Callcenter. Genau dieses Stück bauen wir dir.</p>
+      </div>
+    </section>
+
+    <!-- AB HIER DUNKEL -->
+    <div class="tone-dark">
+
+      <!-- RECHNER -->
+      <section class="as-rechner" id="rechner">
+        <div class="as-in">
+          <h2 class="display">Wie viel Zeit fressen deine Anfragen?</h2>
+          <p>Mit dem System passiert keine der vier Szenen. Was dich das Antworten, Abstimmen und Nachfassen heute kostet, rechnest du dir hier aus:</p>
+          <form class="calc" id="calc" aria-label="Rechner">
+            <div class="calc__inputs">
+              <label class="calc__row">
+                <span class="calc__label">Anfragen pro Woche</span>
+                <output class="calc__val" id="calcAnfragenOut">7</output>
+                <input type="range" id="calcAnfragen" min="1" max="60" step="1" value="7" />
+              </label>
+              <label class="calc__row">
+                <span class="calc__label">Büroarbeit je Anfrage</span>
+                <output class="calc__val" id="calcMinutenOut">30 Min.</output>
+                <input type="range" id="calcMinuten" min="5" max="120" step="5" value="30" />
+              </label>
+              <label class="calc__row">
+                <span class="calc__label">Wert einer Arbeitsstunde</span>
+                <output class="calc__val" id="calcSatzOut">70 €</output>
+                <input type="range" id="calcSatz" min="30" max="150" step="5" value="70" />
+              </label>
+            </div>
+            <div class="calc__result" aria-live="polite">
+              <div class="calc__head">
+                <p class="mono">Dein rechnerischer Aufwand</p>
+                <div class="calc__toggle" role="group" aria-label="Zeitraum">
+                  <button type="button" class="is-active" data-period="monat" aria-pressed="true">Pro Monat</button>
+                  <button type="button" data-period="jahr" aria-pressed="false">Pro Jahr</button>
+                </div>
+              </div>
+              <p class="calc__big display" id="calcStunden">15,2 Std.</p>
+              <p class="calc__sub">Für Antworten, Abstimmungen und Nachfassen.</p>
+              <p class="calc__money display" id="calcWert">1.062 €</p>
+              <p class="calc__moneylabel" id="calcWertLabel">rechnerischer Zeitwert pro Monat</p>
+              <a class="btn btn--pulse" href="#funnel">Diesen Ablauf besprechen</a>
+            </div>
+          </form>
+          <p class="calc__note">So rechnen wir: Anfragen pro Woche × Minuten je Anfrage ÷ 60 × 52 Wochen, für den Monat geteilt durch 12. Der Zeitwert ist diese Zeit mal dein Stundensatz. Das ist dein heutiger Aufwand, grob geschätzt. Kein versprochenes Einsparpotenzial und kein entgangener Umsatz. Wie viel davon sich automatisieren lässt, hängt von deinem Ablauf ab.</p>
+        </div>
+      </section>
+
+      <!-- WAS SICH ÄNDERT -->
+      <section class="as-aendert">
+        <div class="as-in">
+          <h2 class="display">Was sich für dich ändert.</h2>
+          <div class="as-aendert__grid">
+            <article class="as-card">
+              <h3>Sofort beantwortet, egal woher.</h3>
+              <p>Formular, Nachricht oder Mail. Jede Anfrage bekommt in unter fünf Minuten eine Antwort in deinem Ton. Auch nachts, auch am Wochenende. Der Erste zu sein ist ab jetzt der Normalfall.</p>
+            </article>
+            <article class="as-card">
+              <h3>Vorsortiert, du siehst, wer sich lohnt.</h3>
+              <p>Zwei, drei richtige Fragen klären vorab, worum es geht und ob es passt. Du gehst nur noch zu Terminen, bei denen am Ende etwas steht.</p>
+            </article>
+            <article class="as-card">
+              <h3>Termin steht, ohne Hinterhertelefonieren.</h3>
+              <p>Wer passt, bucht sich direkt in deinen Kalender. Kein Hin und Her, kein Nachfassen von Hand. Du machst den Kalender auf und der Tag ist voll mit echten Terminen.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DREI SCHRITTE -->
+      <section class="as-schritte" id="ablauf">
+        <div class="as-in as-in--narrow">
+          <h2 class="display">In drei Schritten. Dann läuft es ohne dich.</h2>
+          <p>Einmal auf deinen Betrieb eingestellt, danach passiert es bei jeder Anfrage von allein.</p>
+          <ol class="as-steps">
+            <li>
+              <h3>Anfrage kommt rein</h3>
+              <p>Egal ob Formular, Nachricht oder Mail. Alles landet an einer Stelle und bekommt sofort eine Antwort in deinem Ton.</p>
+            </li>
+            <li>
+              <h3>Die richtigen Fragen</h3>
+              <p>Zwei, drei Fragen klären, worum es geht und ob es passt. Du musst nichts tippen, das läuft.</p>
+            </li>
+            <li>
+              <h3>Termin steht</h3>
+              <p>Wer passt, sucht sich selbst einen Termin in deinem Kalender. Du bekommst kurz Bescheid und führst das Gespräch.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- MINI-FUNNEL -->
+      <section class="as-funnel" id="funnel">
+        <div class="as-in as-in--narrow">
+          <h2 class="display">Zeig mir, wie das bei mir läuft.</h2>
+          <p>Drei kurze Fragen, dann sagen wir dir ehrlich, ob sich das System für deinen Betrieb lohnt. Antwort in der Regel am selben Werktag.</p>
+
+          <!-- data-webhook: n8n-Workflow »KCG Studio: Anfrage-Funnel«. Antwortet der Webhook nicht, öffnet sich als Ersatz das Mailprogramm. Leer = immer Mailprogramm. -->
+          <form class="funnel" id="funnel-form" data-webhook="https://n8n-n8n.ni5rqh.easypanel.host/webhook/kcg-anfrage" novalidate>
+            <div class="funnel__progress" aria-hidden="true"><span id="funnelBar"></span></div>
+            <!-- Honeypot gegen Spam-Bots: für Menschen unsichtbar, n8n verwirft Anfragen mit gefülltem Feld -->
+            <div class="funnel__hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
+
+            <fieldset class="funnel__step is-active" data-step="1">
+              <legend class="funnel__q">Wie kommen Anfragen heute bei dir rein?</legend>
+              <div class="funnel__opts">
+                <label><input type="checkbox" name="kanal" value="Telefon" /><span>Telefon</span></label>
+                <label><input type="checkbox" name="kanal" value="E-Mail" /><span>E-Mail</span></label>
+                <label><input type="checkbox" name="kanal" value="WhatsApp" /><span>WhatsApp</span></label>
+                <label><input type="checkbox" name="kanal" value="Formular auf der Website" /><span>Formular auf der Website</span></label>
+                <label><input type="checkbox" name="kanal" value="Google oder Portale" /><span>Google oder Portale</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="funnel__step" data-step="2">
+              <legend class="funnel__q">Wie viele Anfragen sind das im Monat, ungefähr?</legend>
+              <div class="funnel__opts funnel__opts--radio">
+                <label><input type="radio" name="menge" value="unter 10" /><span>unter 10</span></label>
+                <label><input type="radio" name="menge" value="10 bis 30" /><span>10 bis 30</span></label>
+                <label><input type="radio" name="menge" value="30 bis 80" /><span>30 bis 80</span></label>
+                <label><input type="radio" name="menge" value="über 80" /><span>über 80</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="funnel__step" data-step="3">
+              <legend class="funnel__q">Wie schnell bekommt ein Kunde heute eine Antwort?</legend>
+              <div class="funnel__opts funnel__opts--radio">
+                <label><input type="radio" name="tempo" value="innerhalb einer Stunde" /><span>Innerhalb einer Stunde</span></label>
+                <label><input type="radio" name="tempo" value="am selben Tag" /><span>Am selben Tag</span></label>
+                <label><input type="radio" name="tempo" value="am nächsten Tag oder später" /><span>Am nächsten Tag oder später</span></label>
+                <label><input type="radio" name="tempo" value="unterschiedlich, je nach Tag" /><span>Unterschiedlich, je nach Tag</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="funnel__step" data-step="4">
+              <legend class="funnel__q">Wohin sollen wir die Einschätzung schicken?</legend>
+              <div class="funnel__fields">
+                <label><span>Betrieb</span><input type="text" name="betrieb" autocomplete="organization" required /></label>
+                <label><span>Dein Name</span><input type="text" name="name" autocomplete="name" required /></label>
+                <label><span>Telefon oder E-Mail</span><input type="text" name="kontakt" autocomplete="tel" required /></label>
+              </div>
+              <p class="funnel__hint">Wir melden uns einmal. Keine Werbung, kein Newsletter. Was mit deinen Angaben passiert, steht in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+            </fieldset>
+
+            <div class="funnel__done" hidden>
+              <h3 class="display" id="funnelDoneH">Danke, ist angekommen.</h3>
+              <p id="funnelDoneP">Wir schauen uns deine Antworten an und melden uns in der Regel am selben Werktag. Wenn es schneller gehen soll: <a href="index.html#kontakt">Erstgespräch direkt vereinbaren</a>.</p>
+            </div>
+
+            <div class="funnel__nav">
+              <button type="button" class="btn btn--ghost" id="funnelBack" hidden>Zurück</button>
+              <button type="button" class="btn btn--gold" id="funnelNext">Weiter</button>
+            </div>
+            <p class="funnel__err" id="funnelErr" role="alert" hidden></p>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__in">
+          <div>
+            <a href="index.html" class="wordmark" aria-label="KCG Studio"><b>KCG</b><i>Studio</i></a>
+            <p class="footer__claim">Websites und Automatisierung für Handwerksbetriebe und kleine Unternehmen. Düsseldorf.</p>
+          </div>
+          <nav aria-label="Footer">
+            <a href="index.html#leistungen">Leistungen</a>
+            <a href="index.html#ablauf">Ablauf</a>
+            <a href="erstgespraech.html">Erstgespräch</a>
+            <a href="index.html#kontakt">Kontakt</a>
+          </nav>
+          <nav aria-label="Rechtliches">
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+          </nav>
+        </div>
+        <p class="footer__copy mono">© 2026 KCG Studio</p>
+      </footer>
+    </div>
+  </main>
+
+  <script src="anfragesystem.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>
