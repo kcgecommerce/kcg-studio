@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Website-Konzept Schreinerei | KCG Studio</title>
+<link rel="stylesheet" href="../fonts/fonts.css" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#EDE3D3;--fg:#2A1D14;--mut:#7A6858;--acc:#B5482A;--line:rgba(42,29,20,.18);--serif:'Fraunces',Georgia,serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace}
+html{background:var(--bg)}
+body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--fg);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.hero{position:relative;min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:auto 1fr auto;overflow:hidden}
+nav{grid-column:1/-1;display:flex;align-items:center;gap:2.6vw;padding:2.2vw 4vw;font-family:var(--mono);font-size:max(11px,.85vw);letter-spacing:.08em;text-transform:uppercase}
+nav b{margin-right:auto;font-family:var(--serif);font-size:1.9em;font-weight:500;letter-spacing:-.02em;text-transform:none}
+nav span{color:var(--mut)}
+nav a{padding-bottom:.3em;border-bottom:1px solid var(--fg)}
+.txt{padding:0 0 3vw 4vw;align-self:center;position:relative;z-index:2}
+.txt small{display:block;font-family:var(--mono);font-size:max(11px,.85vw);letter-spacing:.1em;text-transform:uppercase;color:var(--acc);margin-bottom:2vw}
+h1{font-family:var(--serif);font-variation-settings:'opsz' 144,'SOFT' 50;font-weight:400;font-size:clamp(3rem,9.4vw,10rem);line-height:.9;letter-spacing:-.04em;margin-right:-12vw}
+h1 em{font-style:italic;color:var(--acc)}
+.txt p{margin-top:2.6vw;max-width:26em;color:var(--mut);font-size:max(14px,1.15vw);line-height:1.55}
+.arch{position:relative;margin:0 4vw 0 0;border-radius:40vw 40vw 0 0;overflow:hidden;align-self:end;height:74vh;min-height:300px}
+.arch img{width:100%;height:100%;object-fit:cover;display:block;animation:zoom 18s ease-in-out infinite alternate}
+@keyframes zoom{from{transform:scale(1)}to{transform:scale(1.12)}}
+.badge{position:absolute;left:52%;bottom:13vh;width:11vw;height:11vw;min-width:96px;min-height:96px;z-index:3;border-radius:50%;background:var(--acc);color:#F7EFE3;display:grid;place-items:center}
+.badge svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 16s linear infinite}
+.badge text{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;fill:#F7EFE3;text-transform:uppercase}
+.badge b{font-family:var(--serif);font-size:max(22px,2.4vw);font-weight:400;font-style:italic}
+@keyframes spin{to{transform:rotate(360deg)}}
+.row{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);position:relative;z-index:2;background:var(--bg)}
+.row div{padding:1.5vw 4vw 1.7vw;border-right:1px solid var(--line);font-family:var(--serif);font-size:max(15px,1.5vw)}
+.row div:last-child{border:0}
+.row small{display:block;font-family:var(--mono);font-size:max(10px,.7vw);letter-spacing:.1em;color:var(--mut);margin-bottom:.4em}
+section{padding:9vw 4vw;border-top:1px solid var(--line)}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,5vw,5rem);letter-spacing:-.03em;line-height:1;max-width:14ch;margin-bottom:4vw}
+h2 em{color:var(--acc)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:4vw}
+.cols h3{font-family:var(--serif);font-weight:500;font-size:max(20px,1.8vw);margin-bottom:.5em}
+.cols p{color:var(--mut);line-height:1.55}
+.btn{display:inline-block;padding:1em 1.8em;border-radius:99px;background:var(--fg);color:var(--bg);font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+footer{padding:3vw 4vw;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--mut);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:var(--acc)}
+@media (max-width:700px){
+nav span{display:none}nav{padding:18px 20px;font-size:11px}
+.hero{grid-template-columns:1fr;grid-template-rows:auto auto 1fr auto}
+.txt{padding:8px 20px 22px}h1{font-size:19vw;margin:0}.txt p{font-size:15px;margin-top:16px}.txt small{margin-bottom:14px}
+.arch{margin:0 20px;height:auto;min-height:38vh;border-radius:50vw 50vw 0 0}
+.badge{left:auto;right:28px;bottom:auto;top:44%;width:92px;height:92px}
+.row{grid-template-columns:1fr 1fr}.row div{padding:12px 20px;font-size:15px}.row div:nth-child(2){border-right:0}.row div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+section{padding:64px 20px}.cols{grid-template-columns:1fr;gap:28px}
+}
+@media (prefers-reduced-motion:reduce){.arch img,.badge svg{animation:none}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <nav><b>Deine Schreinerei</b><span>Arbeiten</span><span>Werkstatt</span><span>Über uns</span><a href="#kontakt">Beratung anfragen</a></nav>
+  <div class="txt">
+    <small>Schreinerei und Innenausbau</small>
+    <h1>Möbel, die<br /><em>bleiben.</em></h1>
+    <p>Einbauschränke, Küchen und Treppen aus der eigenen Werkstatt. Geplant für deinen Raum, gebaut aus massivem Holz.</p>
+  </div>
+  <div class="arch"><img src="../img/konzept-schreinerei.jpg" alt="Hände führen einen Hobel über ein Eichenbrett" /></div>
+  <a class="badge" href="#kontakt" aria-label="Beratung anfragen"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><path id="c" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text><textPath href="#c">Beratung anfragen · Aufmaß vor Ort ·</textPath></text></svg><b>Hallo</b></a>
+  <div class="row"><div><small>01</small>Einbaumöbel</div><div><small>02</small>Küchen</div><div><small>03</small>Treppen</div><div><small>04</small>Reparatur</div></div>
+</div>
+<section>
+  <h2>Gebaut für <em>deinen</em> Raum.</h2>
+  <div class="cols">
+    <div><h3>Aufmaß vor Ort</h3><p>Wir messen, hören zu und zeigen dir Holzmuster. Danach bekommst du eine Zeichnung und einen festen Preis.</p></div>
+    <div><h3>Bau in der Werkstatt</h3><p>Jedes Stück entsteht bei uns im Haus. Du kannst vorbeikommen und zusehen, wie dein Möbel wächst.</p></div>
+    <div><h3>Montage aus einer Hand</h3><p>Wir liefern, bauen ein und passen an. Die Leute, die gebaut haben, stehen auch bei dir im Raum.</p></div>
+  </div>
+</section>
+<section id="kontakt"><h2>Zeig uns deinen <em>Raum.</em></h2><a class="btn" href="../website-express.html#anfrage">Beratung anfragen</a></section>
+<footer><span>Website-Konzept ohne realen Auftraggeber.</span><a href="../website-express.html">Gestaltet von KCG Studio</a></footer>
+</body>
+</html>

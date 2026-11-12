@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Website-Konzept Elektrobetrieb | KCG Studio</title>
+<link rel="stylesheet" href="../fonts/fonts.css" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#090B0E;--fg:#F3F5F7;--mut:#8A939E;--acc:#C8FF3D;--line:rgba(255,255,255,.12);--mono:'Geist Mono',ui-monospace,Menlo,monospace}
+html{background:var(--bg)}
+body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--fg);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;overflow:hidden}
+#fx{position:absolute;inset:0;width:100%;height:100%}
+.glow{position:absolute;right:-12vw;top:-18vw;width:60vw;height:60vw;border-radius:50%;background:radial-gradient(closest-side,rgba(200,255,61,.16),transparent);pointer-events:none}
+nav{position:relative;display:flex;align-items:center;gap:2.6vw;padding:2.2vw 4vw;font-family:var(--mono);font-size:max(11px,.85vw);letter-spacing:.08em;text-transform:uppercase}
+nav b{margin-right:auto;font-weight:600;display:flex;align-items:center;gap:.8em}
+nav b::before{content:'';width:.7em;height:.7em;background:var(--acc);border-radius:50%;box-shadow:0 0 1.2em var(--acc)}
+nav span{color:var(--mut)}
+.pill{padding:.9em 1.6em;border-radius:99px;background:var(--acc);color:#0A0D05;font-weight:600}
+.main{position:relative;flex:1;display:grid;grid-template-columns:1fr auto;align-items:end;gap:4vw;padding:0 4vw 3vw}
+h1{font-size:clamp(3.2rem,10.4vw,11rem);line-height:.86;letter-spacing:-.055em;font-weight:800}
+h1 i{font-style:normal;color:transparent;-webkit-text-stroke:.018em var(--fg)}
+h1 em{font-style:normal;color:var(--acc)}
+.sub{display:flex;align-items:center;gap:2.4vw;margin-top:3vw}
+.sub p{max-width:30em;color:var(--mut);font-size:max(14px,1.15vw);line-height:1.5}
+.sub .pill{font-family:var(--mono);font-size:max(11px,.85vw);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.card{position:relative;width:21vw;aspect-ratio:4/5;border-radius:1.4vw;overflow:hidden;transform:rotate(4deg);box-shadow:0 3vw 6vw -2vw #000,0 0 0 1px var(--line);margin-bottom:1vw}
+.card img{width:100%;height:100%;object-fit:cover;display:block}
+.card span{position:absolute;left:1vw;bottom:1vw;padding:.6em 1em;border-radius:99px;background:rgba(9,11,14,.7);backdrop-filter:blur(8px);font-family:var(--mono);font-size:max(10px,.75vw);letter-spacing:.06em;text-transform:uppercase}
+.run{position:relative;border-top:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:1.3vw 0;font-family:var(--mono);font-size:max(11px,.95vw);letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.run div{display:inline-block;animation:run 26s linear infinite}
+.run span{margin:0 2.2vw}.run span::after{content:'⚡';margin-left:4.4vw;color:var(--acc)}
+@keyframes run{to{transform:translateX(-50%)}}
+section{padding:9vw 4vw;border-top:1px solid var(--line)}
+h2{font-size:clamp(2rem,5vw,5rem);letter-spacing:-.04em;font-weight:800;margin-bottom:5vw;max-width:14ch}
+.list a{display:grid;grid-template-columns:5vw 1fr auto;align-items:baseline;gap:2vw;padding:2.2vw 0;border-top:1px solid var(--line);transition:padding .3s,color .3s}
+.list a:hover{padding-left:2vw;color:var(--acc)}
+.list small{font-family:var(--mono);color:var(--mut)}
+.list strong{font-size:clamp(1.4rem,3vw,3rem);letter-spacing:-.03em}
+.list span{color:var(--mut);max-width:26em}
+footer{padding:3vw 4vw;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--mut);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:var(--acc)}
+@media (max-width:700px){
+nav span{display:none}nav{padding:18px 20px;font-size:11px}
+.main{grid-template-columns:1fr;padding:0 20px 28px;gap:24px;align-content:end}
+h1{font-size:19vw}
+.sub{flex-direction:column;align-items:flex-start;gap:18px;margin-top:22px}.sub p{font-size:15px}
+.card{width:58vw;border-radius:16px;order:-1;margin:0 0 0 auto}.card span{left:10px;bottom:10px;font-size:10px}
+.run{padding:14px 0;font-size:11px}
+section{padding:64px 20px}.list a{grid-template-columns:1fr;gap:6px;padding:20px 0}
+}
+@media (prefers-reduced-motion:reduce){.run div{animation:none}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <canvas id="fx" aria-hidden="true"></canvas><div class="glow"></div>
+  <nav><b>Dein Elektrobetrieb</b><span>Leistungen</span><span>Projekte</span><span>Über uns</span><a class="pill" href="#kontakt">Anfrage stellen</a></nav>
+  <div class="main">
+    <div>
+      <h1>Strom, <i>der</i><br />einfach <em>läuft.</em></h1>
+      <div class="sub"><p>Elektroinstallation, Ladetechnik und Smart Home für Haus und Gewerbe. Geplant, montiert und geprüft von einem festen Ansprechpartner.</p><a class="pill" href="#kontakt">Termin anfragen</a></div>
+    </div>
+    <div class="card"><img src="../img/konzept-elektro.jpg" alt="Montage einer Wallbox an einer Garagenwand" /><span>Wallbox-Montage</span></div>
+  </div>
+  <div class="run" aria-hidden="true"><div><span>Installation</span><span>Ladetechnik</span><span>Smart Home</span><span>E-Check</span><span>Photovoltaik</span><span>Installation</span><span>Ladetechnik</span><span>Smart Home</span><span>E-Check</span><span>Photovoltaik</span></div></div>
+</div>
+<section>
+  <h2>Was wir für dich anschließen.</h2>
+  <div class="list">
+    <a href="#kontakt"><small>01</small><strong>Installation</strong><span>Neubau, Umbau und Sanierung, vom Zählerschrank bis zur letzten Steckdose.</span></a>
+    <a href="#kontakt"><small>02</small><strong>Ladetechnik</strong><span>Wallbox für Haus und Betrieb, inklusive Anmeldung beim Netzbetreiber.</span></a>
+    <a href="#kontakt"><small>03</small><strong>Smart Home</strong><span>Licht, Heizung und Rollläden, gesteuert vom Handy.</span></a>
+    <a href="#kontakt"><small>04</small><strong>E-Check</strong><span>Prüfung mit Protokoll für Vermieter, Gewerbe und Versicherung.</span></a>
+  </div>
+</section>
+<section id="kontakt"><h2>Erzähl uns, was ansteht.</h2><a class="pill" href="../website-express.html#anfrage">Anfrage stellen</a></section>
+<footer><span>Website-Konzept ohne realen Auftraggeber.</span><a href="../website-express.html">Gestaltet von KCG Studio</a></footer>
+<script>
+(()=>{const c=document.getElementById('fx'),x=c.getContext('2d');let w,h,t=0,on=true;
+const red=matchMedia('(prefers-reduced-motion: reduce)').matches,d=Math.min(devicePixelRatio||1,2);
+function size(){w=c.width=c.offsetWidth*d;h=c.height=c.offsetHeight*d}
+function draw(){x.clearRect(0,0,w,h);
+for(let i=0;i<28;i++){x.beginPath();const y0=h*(.2+i*.021);
+for(let s=0;s<=90;s++){const k=s/90,px=k*w,y=y0+Math.sin(k*6+t+i*.33)*h*.075*Math.sin(k*Math.PI)+Math.sin(k*15-t*1.6+i)*h*.01;s?x.lineTo(px,y):x.moveTo(px,y)}
+const hot=i%7===3;x.strokeStyle=hot?'rgba(200,255,61,.9)':'rgba(255,255,255,'+(.04+i*.004)+')';x.lineWidth=(hot?1.8:1)*d;x.shadowBlur=hot?18*d:0;x.shadowColor='#C8FF3D';x.stroke()}
+t+=.011;if(on&&!red)requestAnimationFrame(draw)}
+size();addEventListener('resize',()=>{size();if(red)draw()});
+new IntersectionObserver(e=>{const v=e[0].isIntersecting;if(v&&!on){on=true;draw()}else on=v}).observe(c);draw()})();
+</script>
+</body>
+</html>

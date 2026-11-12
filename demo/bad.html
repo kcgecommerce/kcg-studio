@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Website-Konzept Heizung und Bad | KCG Studio</title>
+<link rel="stylesheet" href="../fonts/fonts.css" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#E6ECEC;--fg:#0E2A30;--mut:#5B7278;--acc:#FF6A3D;--line:rgba(14,42,48,.16);--serif:'Fraunces',Georgia,serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace}
+html{background:var(--bg)}
+body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--fg);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.hero{position:relative;min-height:100vh;display:grid;grid-template-rows:auto 1fr auto;overflow:hidden}
+.pic{position:absolute;top:0;right:0;bottom:0;width:62%;clip-path:polygon(22% 0,100% 0,100% 100%,0 100%)}
+.pic img{width:100%;height:100%;object-fit:cover;object-position:70% 50%;display:block;animation:pan 22s ease-in-out infinite alternate}
+@keyframes pan{from{transform:scale(1.06) translateX(-1.5%)}to{transform:scale(1.14) translateX(1.5%)}}
+nav{position:relative;z-index:2;display:flex;align-items:center;gap:2.6vw;padding:2.2vw 4vw;font-family:var(--mono);font-size:max(11px,.85vw);letter-spacing:.08em;text-transform:uppercase}
+nav b{margin-right:auto;font-weight:600;letter-spacing:.14em}
+nav span{color:var(--fg)}
+.pill{padding:.9em 1.6em;border-radius:99px;background:var(--fg);color:var(--bg)}
+.txt{position:relative;z-index:2;align-self:center;padding:0 4vw 2vw}
+.txt small{display:inline-flex;align-items:center;gap:.8em;font-family:var(--mono);font-size:max(11px,.85vw);letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:2vw}
+.txt small::before{content:'';width:.6em;height:.6em;border-radius:50%;background:var(--acc)}
+h1{font-family:var(--serif);font-variation-settings:'opsz' 144,'SOFT' 100;font-weight:300;font-size:clamp(3rem,9.6vw,10.4rem);line-height:.88;letter-spacing:-.045em}
+h1 em{font-style:italic;font-weight:300;color:var(--acc)}
+.txt p{margin-top:2.4vw;max-width:25em;color:var(--mut);font-size:max(14px,1.15vw);line-height:1.55}
+.cta{display:flex;gap:1.4vw;margin-top:2.4vw;font-family:var(--mono);font-size:max(11px,.85vw);letter-spacing:.08em;text-transform:uppercase}
+.cta .pill{background:var(--acc);color:#fff}.cta a:last-child{padding:.9em 0;border-bottom:1px solid var(--fg)}
+.dial{position:absolute;z-index:3;right:5vw;bottom:9vw;width:17vw;min-width:170px;padding:1.6vw;border-radius:1.6vw;background:rgba(255,255,255,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 3vw 5vw -2vw rgba(14,42,48,.5),0 0 0 1px rgba(255,255,255,.6)}
+.dial small{font-family:var(--mono);font-size:max(10px,.7vw);letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.dial svg{display:block;width:100%;margin:.6vw 0}
+.dial circle{fill:none;stroke-width:7}
+.ring{stroke:var(--acc);stroke-linecap:round;stroke-dasharray:264;stroke-dashoffset:264;transform:rotate(-90deg);transform-origin:50% 50%;animation:fill 3.2s cubic-bezier(.2,.8,.2,1) .4s forwards}
+@keyframes fill{to{stroke-dashoffset:86}}
+.dial text{font-family:var(--serif);font-size:24px;fill:var(--fg)}
+.dial p{font-size:max(12px,.95vw);color:var(--fg);line-height:1.35}
+.row{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);width:34%;margin:0 4vw 2.4vw;border-top:1px solid var(--line)}
+.row div{padding-top:1.1vw;font-size:max(13px,1.05vw)}.row small{display:block;font-family:var(--mono);font-size:max(10px,.7vw);color:var(--mut);margin-bottom:.3em}
+section{padding:9vw 4vw;border-top:1px solid var(--line)}
+h2{font-family:var(--serif);font-weight:300;font-size:clamp(2rem,5vw,5rem);letter-spacing:-.03em;line-height:1;max-width:15ch;margin-bottom:4vw}
+h2 em{color:var(--acc)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:4vw}
+.cols div{padding-top:1.4vw;border-top:2px solid var(--fg)}
+.cols h3{font-family:var(--serif);font-weight:400;font-size:max(20px,1.9vw);margin-bottom:.5em}
+.cols p{color:var(--mut);line-height:1.55}
+footer{padding:3vw 4vw;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--mut);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:var(--acc)}
+@media (max-width:700px){
+nav span{display:none}nav{padding:18px 20px;font-size:11px}
+.pic{position:relative;width:auto;height:40vh;margin:0 20px;clip-path:none;border-radius:18px;overflow:hidden;grid-row:2}
+.hero{grid-template-rows:auto auto 1fr auto}
+.txt{padding:22px 20px 18px;grid-row:3}h1{font-size:18.5vw}.txt p{font-size:15px;margin-top:14px}.txt small{margin-bottom:12px}
+.cta{gap:16px;margin-top:18px;font-size:11px}
+.dial{right:32px;top:calc(40vh - 110px);bottom:auto;width:132px;min-width:0;padding:12px;border-radius:14px}.dial p{display:none}
+.row{width:auto;margin:0 20px 20px;grid-row:4}.row div{padding-top:10px;font-size:13px}
+section{padding:64px 20px}.cols{grid-template-columns:1fr;gap:28px}
+}
+@media (prefers-reduced-motion:reduce){.pic img{animation:none}.ring{animation:none;stroke-dashoffset:86}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="pic"><img src="../img/konzept-heizung.jpg" alt="Modernes Bad mit Glasdusche und Blick in den Technikraum" /></div>
+  <nav><b>Dein Heizungsbau</b><span>Heizung</span><span>Bad</span><span>Wartung</span><a class="pill" href="#kontakt">Notdienst</a></nav>
+  <div class="txt">
+    <small>Heizung, Bad und Wartung</small>
+    <h1>Warm.<br />Ruhig.<br /><em>Erledigt.</em></h1>
+    <p>Wir planen dein Bad, tauschen deine Heizung und kommen danach jedes Jahr zur Wartung. Ein Betrieb, ein Ansprechpartner.</p>
+    <div class="cta"><a class="pill" href="#kontakt">Angebot anfragen</a><a href="#kontakt">Rückruf vereinbaren</a></div>
+  </div>
+  <div class="dial" aria-hidden="true"><small>Wohnzimmer</small><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" stroke="rgba(14,42,48,.12)"/><circle class="ring" cx="50" cy="50" r="42"/><text x="50" y="58" text-anchor="middle">21,5°</text></svg><p>Neue Heizung, per App geregelt.</p></div>
+  <div class="row"><div><small>01</small>Heizungstausch</div><div><small>02</small>Badplanung</div><div><small>03</small>Wartung</div></div>
+</div>
+<section>
+  <h2>Von der Planung bis zur <em>Wartung.</em></h2>
+  <div class="cols">
+    <div><h3>Heizung</h3><p>Wärmepumpe, Gas-Hybrid oder Fernwärme. Wir rechnen durch, was zu deinem Haus passt, und kümmern uns um die Förderung.</p></div>
+    <div><h3>Bad</h3><p>Bodengleiche Dusche, neue Leitungen, alles aus einer Hand. Du bekommst einen Zeitplan, an den wir uns halten.</p></div>
+    <div><h3>Wartung</h3><p>Ein fester Termin im Jahr, ein Protokoll für deine Unterlagen. Bei einer Störung sind wir erreichbar.</p></div>
+  </div>
+</section>
+<section id="kontakt"><h2>Sag uns, was <em>ansteht.</em></h2><a class="pill" style="display:inline-block;background:var(--acc);color:#fff;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase" href="../website-express.html#anfrage">Angebot anfragen</a></section>
+<footer><span>Website-Konzept ohne realen Auftraggeber.</span><a href="../website-express.html">Gestaltet von KCG Studio</a></footer>
+</body>
+</html>
